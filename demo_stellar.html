@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>视差滚动效果</title>
+        <style>
+            body { font-size: 20px; color: white; text-shadow: 0 1px 0 black, 0 0 5px black; } 
+            p { padding: 0 0.5em; margin: 0; } 
+            .content { background-attachment: fixed; height: 400px; } 
+            #content2 { background-image: url("http://ocdn.eu/images/pulscms/ZjU7MDQsMCwzMiwzODQsMWZhOzA2LDMyMCwxYzI_/1eb29a70dabd0994cdefaad01ca3c884.jpg"); } 
+            #content3 { background-image: url("http://www.zeus.aegee.org/magazine/wp-content/uploads/napoli-golfo-vesuvio.jpg"); } 
+            #content5 { background-image: url("http://ocdn.eu/images/pulscms/ZjU7MDQsMCwzMiwzODQsMWZhOzA2LDMyMCwxYzI_/1eb29a70dabd0994cdefaad01ca3c884.jpg"); } 
+            #content6 { background-image: url("http://www.zeus.aegee.org/magazine/wp-content/uploads/napoli-golfo-vesuvio.jpg"); }
+        </style>
+    </head>
+    <body>
+        <div class="content" id="content1"> 
+        <p>TEXT HERE</p> 
+        </div> 
+        <div class="content" id="content2"> <p>TEXT HERE</p> </div> 
+        <div class="content" id="content3" data-stellar-background-ratio="0.5"> 
+            <p>TEXT HERE</p> 
+        </div> 
+        <div class="content" id="content4" data-stellar-background-ratio="0.5"> 
+            <p>TEXT HERE</p> 
+        </div> 
+        <div class="content" id="content5" data-stellar-background-ratio="0.5"> 
+            <p>TEXT HERE</p> 
+        </div> 
+        <div class="content" id="content6" data-stellar-background-ratio="0.5"> 
+            <p>TEXT HERE</p> 
+        </div>*
+        <script src='https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js'></script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+a {color: #0278AE;}
+a:hover, a:active, a:focus {color: #0278AE;}
+::-webkit-selection,::-moz-selection,::selection{background: #0278AE;}
+
+#qdy-header .overlay {background: rgba(2, 120, 174, 0.9);}
+#qdy-features {background: #0278AE;}
+#qdy-features .feature-left .icon i {color: #0278AE !important;}
+.qdy-bg-dark {background: #0278AE;}
+.qdy-social-icons li a {color: #0278AE;}
+#qdy-about .qdy-social-icons li a:hover {background: #0278AE;}
+
+.timeline > li > .timeline-badge {background-color: #0278AE;}
+
+#qdy-started .btn {color: #0278AE;}
+
+.btn-primary {background: #0278AE;border: 2px solid #0278AE;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {background: #0289c7 !important;border-color: #0289c7 !important;}
+.btn-primary.btn-outline {color: #0278AE;border: 2px solid #0278AE;}
+.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {background: #0278AE;}
+
+.form-control:active, .form-control:focus {border-color: #0278AE;}

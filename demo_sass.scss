@@ -1,0 +1,54 @@
+/* sass书写规则：$user-defined-attribute:变量属性值
+	@mixin定义一个可以重复使用的样式
+	@include mixin_name
+	Sass 的连接符号 - 与下划线符号 _ 是相同的，也就是 @mixin important-text { } 
+	与 @mixin important_text { } 是一样的混入
+*/
+$brand-primary: #FF9000 !default;
+$input-border-focus: $brand-primary !default;
+$screen-sm:768px;
+
+// Mixin
+@mixin translateX($translatex) {
+	-moz-transform: translateX($translatex);
+	-webkit-transform: translateX($translatex);
+	-ms-transform: translateX($translatex);
+	-o-transform: translateX($translatex);
+	transform: translateX($translatex);
+}
+@mixin flex {
+	display: -webkit-box;      
+  	display: -moz-box;         
+  	display: -ms-flexbox;      
+  	display: -webkit-flex;     
+  	display: flex;             
+}
+@mixin flexwrap() {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap; 
+	-moz-flex-wrap: wrap; 
+}
+
+#fh5co-consult{
+	@include flex;
+	@include flexwrap();
+	width: 100%;
+	.video{
+		display: inline-block;
+		@media screen and (max-width: $screen-sm){
+			width: 100% !important;
+		}
+	}
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?srf3rx');
+	src:url('../fonts/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?srf3rx') format('truetype'),
+		url('../fonts/icomoon.woff?srf3rx') format('woff'),
+		url('../fonts/icomoon.svg?srf3rx#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
